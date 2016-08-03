@@ -10,13 +10,13 @@ public class S63 {
 		int[][] paths = new int[m][n];
 		int ans = 1;
 		for (int i = 0; i < m; i++) {
-			if (ans == 1 && obstacleGrid[i][0] == 1)
+			if (obstacleGrid[i][0] == 1)
 				ans = 0;
 			paths[i][0] = ans;
 		}
 		ans = 1;
 		for (int i = 0; i < n; i++) {
-			if (ans == 1 && obstacleGrid[0][i] == 1)
+			if (obstacleGrid[0][i] == 1)
 				ans = 0;
 			paths[0][i] = ans;
 		}
